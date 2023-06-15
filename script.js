@@ -1,13 +1,13 @@
 // complete the given function
 
 function palindrome(str){
- let left = 0, right = s.length - 1;
+ let left = 0, right = str.length - 1;
     while (left < right) {
-        if (!isAlphaNumeric(s[left]))
+        if (!isAlphaNumeric(str[left]))
             left++;
-        else if (!isAlphaNumeric(s[right]))
+        else if (!isAlphaNumeric(str[right]))
             right--;
-        else if (s[left].toLowerCase() !== s[right].toLowerCase())
+        else if (str[left].toLowerCase() !== str[right].toLowerCase())
             return false;
         else {
             left++;
